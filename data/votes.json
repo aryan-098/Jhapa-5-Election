@@ -1,0 +1,57 @@
+{
+  "constituency": "Jhapa-5",
+  "electionDate": "2026-03-05",
+  "lastUpdated": "2026-03-04T05:52:31.133Z",
+  "candidates": [
+    {
+      "id": 1,
+      "name": "Balen Shah",
+      "party": "RSP",
+      "partyFull": "Rastriya Swatantra Party",
+      "color": "#35b3e5",
+      "votes": 1,
+      "photo": "/photos/balen.jpg",
+      "isMajor": true
+    },
+    {
+      "id": 2,
+      "name": "KP Sharma Oli",
+      "party": "CPN-UML",
+      "partyFull": "Communist Party of Nepal (Unified Marxist–Leninist)",
+      "color": "#d8160c",
+      "votes": 1289,
+      "photo": "/photos/UML.jpg",
+      "isMajor": true
+    },
+    {
+      "id": 3,
+      "name": "Mandhara Chimariya",
+      "party": "Nepali Congress",
+      "partyFull": "Nepali Congress",
+      "color": "#2E7D32",
+      "votes": 9218,
+      "photo": "/photos/NC.jpg",
+      "isMajor": false
+    },
+    {
+      "id": 4,
+      "name": "Ranjit Tamang",
+      "party": "Nepali Communist Party",
+      "partyFull": "Nepali Communist Party",
+      "color": "#F57F17",
+      "votes": 12345,
+      "photo": "/photos/Maoist.jpg",
+      "isMajor": false
+    },
+    {
+      "id": 5,
+      "name": "Samir Tamang",
+      "party": "SSP",
+      "partyFull": "Shram Sanskriti Party",
+      "color": "#533737",
+      "votes": 1,
+      "photo": "/photos/SSP.jpg",
+      "isMajor": false
+    }
+  ]
+}

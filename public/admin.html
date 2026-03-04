@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel — Jhapa-5 Vote Update</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/admin.css">
+</head>
+
+<body>
+    <!-- Login Screen -->
+    <div class="login-screen" id="loginScreen">
+        <div class="login-card">
+            <div class="login-icon">🔐</div>
+            <h1 class="login-title">Admin Access</h1>
+            <p class="login-subtitle">Jhapa-5 Vote Count Manager</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter admin password" required autocomplete="off">
+                </div>
+                <button type="submit" class="btn btn-primary">Unlock Dashboard</button>
+                <p class="login-error" id="loginError"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div class="admin-dashboard" id="adminDashboard" style="display: none;">
+        <header class="admin-header">
+            <div>
+                <h1>🗳️ Jhapa-5 — Vote Update Panel</h1>
+                <p class="admin-subtitle">Update vote counts below and click "Update All Votes"</p>
+            </div>
+            <button class="btn btn-logout" id="logoutBtn">Logout</button>
+        </header>
+
+        <div class="status-bar" id="statusBar" style="display: none;">
+            <span class="status-icon"></span>
+            <span class="status-message" id="statusMessage"></span>
+        </div>
+
+        <form id="voteForm">
+            <div class="candidates-grid" id="candidatesGrid">
+                <!-- Dynamically filled -->
+            </div>
+
+            <div class="form-actions">
+                <div class="total-display">
+                    Total Votes: <span id="totalVotesDisplay">0</span>
+                </div>
+                <button type="submit" class="btn btn-submit" id="submitBtn">
+                    <span class="btn-icon">📤</span> Update All Votes
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/admin.js"></script>
+</body>
+
+</html>

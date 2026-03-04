@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dashboard:
+    build: .
+    container_name: jhapa5-live
+    ports:
+      - "80:3000" # Map host port 80 to container port 3000
+    volumes:
+      - vote-data:/app/data # Keep votes data permanent even if container restarts
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+
+volumes:
+  vote-data:

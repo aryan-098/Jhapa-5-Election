@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jhapa-5 | Live Election Results 2026</title>
+  <meta name="description"
+    content="Live vote counting dashboard for Jhapa-5 constituency — General Election 2026. Real-time results updated as votes are counted.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <!-- Animated background particles -->
+  <div class="bg-particles" id="bgParticles"></div>
+
+  <!-- Connection status indicator -->
+  <div class="connection-status" id="connectionStatus">
+    <span class="status-dot"></span>
+    <span class="status-text">LIVE</span>
+  </div>
+
+  <!-- Header -->
+  <header class="hero">
+    <div class="hero-badge">🗳️ GENERAL ELECTION 2026</div>
+    <h1 class="hero-title">JHAPA-5</h1>
+    <p class="hero-subtitle">Live Vote Count Dashboard</p>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <span class="stat-value" id="leadingParty">—</span>
+        <span class="stat-label">Leading</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="lastUpdated">—</span>
+        <span class="stat-label">Last Updated</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Competition (2 Major Candidates) -->
+  <section class="main-competition">
+    <div class="major-candidates" id="majorCandidates">
+      <!-- Dynamically filled — VS badge injected by JS between the two cards -->
+    </div>
+  </section>
+
+  <!-- Other Candidates -->
+  <section class="other-candidates-section">
+    <h2 class="section-title">Other Candidates</h2>
+    <div class="minor-candidates" id="minorCandidates">
+      <!-- Dynamically filled -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>📊 Data updated manually</p>
+    <p class="footer-disclaimer">This is an unofficial vote count tracker. Official results are declared by the Election
+      Commission of Nepal.</p>
+  </footer>
+
+  <script src="/index.js"></script>
+</body>
+
+</html>
